@@ -1,4 +1,7 @@
 /* HEADER */
+*{
+    font-size: 15px;
+}
 .header-row h1{
     color: purple;
 }
@@ -6,19 +9,22 @@
     color: purple;
     font-weight: bold;
 }
-@media (min-width:375px){
+@media (min-width:576px){
     .header-rated .rate1{
         margin-right: 6%;
+        width: 90%;
     }
     .header-rated .rate2{
         margin-right: 1%;
         margin-left: 1%;
+        width: 95%;
     }
     .header-rated .rate3{
         margin-left: 6%;
+        width: 97%;
     }
 }
-@media (max-width:375px){
+@media (max-width:575px){
     .header-row{
         text-align: center;
     }
@@ -26,9 +32,25 @@
 
 /* COMMENTS */
 .comments-box{
-    background-color: rgb(78, 5, 78);
-    color:rgb(236, 236, 236);
+    background-color:hsl(300, 43%, 22%);
+    color:hsl(300, 24%, 96%);
+    
 }
 .comments-header p{
-    color:violet;
+    color:hsl(333, 80%, 67%);
+}
+
+@media (min-width:768px) and (max-width:991px){
+    .comments-box{
+        width: 110%;
+    }
+    .comments-header-text{
+        padding-left: 30px;
+    }
+}
+@media (min-width:575px) and (max-width:767px){
+    .comments-box{
+        text-align: center;
+    }
+  
 }
